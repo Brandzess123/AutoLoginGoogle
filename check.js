@@ -24,7 +24,7 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth");
   await navigationPromise;
 
   //TODO : change to your email
-  await page.type('input[type="email"]', "forgotmyname1113@gmail.com");
+  await page.type('input[type="email"]', "your email");
 
   await page.waitForSelector("#identifierNext");
   await page.click("#identifierNext");
@@ -36,7 +36,7 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth");
   await page.waitFor(5000);
 
   //TODO : change to your password
-  await page.type('input[type="password"]', "wertyui01");
+  await page.type('input[type="password"]', "your password");
 
   await page.waitForSelector("#passwordNext");
   await page.click("#passwordNext");
